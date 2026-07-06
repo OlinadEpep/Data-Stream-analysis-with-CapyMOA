@@ -1,0 +1,28 @@
+{
+  "feature_order": [
+    "original_shape2D_Elongation",
+    "original_shape2D_MajorAxisLength",
+    "original_shape2D_MinorAxisLength",
+    "original_shape2D_Perimeter",
+    "original_shape2D_MaximumDiameter",
+    "original_shape2D_Sphericity",
+    "original_firstorder_Mean",
+    "original_firstorder_Median",
+    "original_firstorder_Minimum",
+    "original_firstorder_Maximum",
+    "original_firstorder_Range",
+    "original_firstorder_Uniformity",
+    "Centroid_X",
+    "Centroid_Y"
+  ],
+  "cluster_to_class": {
+    "0": 3,
+    "1": 2,
+    "2": 2
+  },
+  "rules": [
+    "IF original_shape2D_Elongation IS HIGH (0.95) AND original_shape2D_MajorAxisLength IS LOW (0.81) AND original_shape2D_MinorAxisLength IS LOW (0.98) AND original_shape2D_Perimeter IS LOW (0.87) AND original_shape2D_MaximumDiameter IS LOW (0.86) AND original_shape2D_Sphericity IS MEDIUM (1.00) AND original_firstorder_Mean IS MEDIUM (0.87) AND original_firstorder_Median IS MEDIUM (1.00) AND original_firstorder_Minimum IS LOW (0.98) AND original_firstorder_Maximum IS MEDIUM (1.00) AND original_firstorder_Range IS MEDIUM (1.00) AND original_firstorder_Uniformity IS LOW (1.00) AND Centroid_X IS MEDIUM (0.88) AND Centroid_Y IS MEDIUM (1.00) THEN class = 3",
+    "IF original_shape2D_Elongation IS MEDIUM (0.93) AND original_shape2D_MajorAxisLength IS MEDIUM (0.93) AND original_shape2D_MinorAxisLength IS MEDIUM (0.93) AND original_shape2D_Perimeter IS MEDIUM (1.00) AND original_shape2D_MaximumDiameter IS MEDIUM (0.99) AND original_shape2D_Sphericity IS LOW (0.86) AND original_firstorder_Mean IS MEDIUM (0.90) AND original_firstorder_Median IS LOW (0.83) AND original_firstorder_Minimum IS LOW (0.98) AND original_firstorder_Maximum IS MEDIUM (0.99) AND original_firstorder_Range IS MEDIUM (1.00) AND original_firstorder_Uniformity IS LOW (0.88) AND Centroid_X IS MEDIUM (0.87) AND Centroid_Y IS MEDIUM (0.96) THEN class = 2",
+    "IF original_shape2D_Elongation IS HIGH (0.83) AND original_shape2D_MajorAxisLength IS LOW (0.98) AND original_shape2D_MinorAxisLength IS MEDIUM (0.86) AND original_shape2D_Perimeter IS LOW (0.92) AND original_shape2D_MaximumDiameter IS LOW (0.93) AND original_shape2D_Sphericity IS MEDIUM (0.93) AND original_firstorder_Mean IS MEDIUM (0.95) AND original_firstorder_Median IS MEDIUM (0.99) AND original_firstorder_Minimum IS LOW (0.99) AND original_firstorder_Maximum IS MEDIUM (0.99) AND original_firstorder_Range IS MEDIUM (1.00) AND original_firstorder_Uniformity IS LOW (0.97) AND Centroid_X IS MEDIUM (0.95) AND Centroid_Y IS MEDIUM (0.99) THEN class = 2"
+  ]
+}
